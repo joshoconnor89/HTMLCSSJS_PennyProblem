@@ -1,0 +1,20 @@
+
+<!-- saved from url=(0038)http://mm214.com/mad2/week6/money.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>Penny a day remember this one?
+start with a penny on February 1st....double your money every day. How much money do you have at 
+the end of the month.
+
+<script type="text/javascript">
+var startmoney = .01;
+var term = 28;
+var currdate= new Date();
+year = currdate.getFullYear();
+isLeap = new Date(year, 1, 29).getMonth() == 1
+if (isLeap === true){
+	term = 29;
+}
+for (var i=1;i<term;i++){
+	startmoney*=2;
+}
+alert("you have $" + startmoney);
+</script></body></html>
